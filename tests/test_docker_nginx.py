@@ -9,6 +9,7 @@ This test module verifies Phase 2 requirements:
 - Nginx is accessible from other containers via name resolution
 - Response times meet baseline requirements
 """
+
 import subprocess
 import time
 import pytest
@@ -128,12 +129,17 @@ class TestSiteBuild:
     """Tests for building test site to bind mount directory."""
 
     def test_test_site_output_directory_exists(self):
-        """Verify tmp/test-site-output/ directory exists."""
+        """Verify tmp/test-site-output/ directory can be created."""
+        # Create directory if it doesn't exist (needed for CI)
+        TEST_SITE_OUTPUT.mkdir(parents=True, exist_ok=True)
         assert TEST_SITE_OUTPUT.exists(), f"Directory {TEST_SITE_OUTPUT} does not exist"
         assert TEST_SITE_OUTPUT.is_dir(), f"{TEST_SITE_OUTPUT} is not a directory"
 
     def test_mkdocs_builds_to_test_site_output(self):
         """Verify mkdocs builds successfully to test-site-output."""
+        # Ensure parent directory exists
+        TEST_SITE_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+
         # Clean output directory first
         if TEST_SITE_OUTPUT.exists():
             run_command(f"rm -rf {TEST_SITE_OUTPUT}/*")
@@ -197,9 +203,7 @@ class TestDockerCompose:
         ), "Container name must be set to docs-nginx"
 
         # Check port mapping
-        assert (
-            "target: 8080" in output
-        ), "Port target 8080 not found"
+        assert "target: 8080" in output, "Port target 8080 not found"
         assert (
             'published: "8080"' in output or "published: 8080" in output
         ), "Published port 8080 not found"
