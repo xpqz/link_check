@@ -1,0 +1,9 @@
+services:
+  docs-nginx:
+    build:
+      context: ./docker/nginx
+    container_name: docs-nginx
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./tmp/test-site-output:/usr/share/nginx/html:ro
