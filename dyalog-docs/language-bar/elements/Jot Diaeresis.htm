@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html conditions="HAS_UNICODE">
+    <head><title>Jot Diaeresis</title>
+        <char>⍤</char>
+    </head>
+    <body><pre>Dyadic operator (f⍤g): Atop
+
+      -⍤÷ 4      ⍝ (  f⍤g y) ≡  f   g y
+¯0.25
+      12 -⍤÷ 4   ⍝ (x f⍤g y) ≡ (f x g y)
+¯3
+      3 1 4 1 5 ~⍤∊ 1 2 3
+0 0 1 0 1
+
+Dyadic operator (f⍤a):   Rank 
+
+      cube    ⍝ 3D array
+ 1  2  3
+ 4  5  6
+        
+ 7  8  9
+10 11 12
+
+      (,⍤2) cube
+1 2 3  4  5  6
+7 8 9 10 11 12
+
+      cmat    ⍝ character matrix
+abc
+zxy 
+      (⍋⍤1) cmat    ⍝ grade-up by row  
+1 2 3 
+2 3 1 
+      nmat     ⍝ numeric matrix
+1  2  3  4
+5  6  7  8
+9 10 11 12
+ 
+      10 20 30 (+⍤0 1) nmat  ⍝ scalars plus vectors
+11 12 13 14 
+25 26 27 28 
+39 40 41 42
+</pre>
+    </body>
+</html>

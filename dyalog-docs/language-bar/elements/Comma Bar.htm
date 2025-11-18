@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Comma Bar</title>
+        <char>⍪</char>
+    </head>
+    <body><pre>Monadic function:  Table
+
+      ⍪ 2 3 4
+2
+3
+4
+      cube    ⍝ 3D array
+1 2
+3 4
+   
+5 6
+7 8
+      ⍪ cube
+1 2 3 4
+5 6 7 8
+
+Dyadic function:   Catenate First/Laminate
+
+      mat
+1 2 3
+4 5 6
+
+      mat ⍪ 0
+1 2 3
+4 5 6
+0 0 0
+
+      mat ⍪ 7 8 9
+1 2 3
+4 5 6
+7 8 9
+</pre>
+    </body>
+</html>

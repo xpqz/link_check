@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html conditions="HAS_UNICODE">
+    <head><title>Quad Colon</title>
+        <char>⍠</char>
+    </head>
+    <body><pre>Dyadic operator: Variant
+
+      ('a' ⎕R 'x') 'ABC'           ⍝ 'a' replaced with 'x'
+ABC
+
+      ('a' ⎕R 'x' ⍠ 'IC' 1) 'ABC'  ⍝ .. Ignoring Case
+xBC
+
+      IgnCase ← ⍠ 'IC' 1
+      
+      'a' ⎕R 'x' IgnCase 'ABC'
+xBC 
+</pre>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html conditions="HAS_UNICODE">
+    <head><title>Circle Diaeresis</title>
+        <char>⍥</char>
+    </head>
+    <body><pre>Dyadic operator: Over
+
+      -⍥⌊ 3.6                 ⍝ Same as ∘ or ⍤ monadically
+¯3
+      5.1 -⍥⌊ 3.6             ⍝ Applies ⌊ to both arguments
+2
+      'Dyalog' ≡⍥⎕C 'DYALOG'  ⍝ Case-insensitive match
+1
+      'Dyalog' ≡⍥⎕C 'IBM'
+0
+</pre>
+    </body>
+</html>

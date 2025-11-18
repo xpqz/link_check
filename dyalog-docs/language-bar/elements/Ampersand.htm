@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Ampersand</title>
+        <char>&amp;</char>
+    </head>
+    <body><pre>Monadic operator:  Spawn
+
+      delay←{'Delayed: ',⎕DL ⍵}    ⍝ delay function
+
+      delay 10    ⍝ delay for 10 seconds
+Delayed:  10.2228
+
+      ⎕←delay&amp;10  ⍝ delay for 10 seconds in new thread 1
+1
+
+      2+3 4       ⍝ execute something in current thread
+5 6
+                  ⍝ thread 1 completes:
+Delayed:  10.03183
+</pre>
+    </body>
+</html>

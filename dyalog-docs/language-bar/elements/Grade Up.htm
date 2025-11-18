@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Grade Up</title>
+        <char>⍋</char>
+    </head>
+    <body><pre>Monadic function:  Grade Up
+
+Indices which would select items in ascending order.
+
+      ⍋ 33 11 44 66 22
+2 5 1 3 4
+
+      names←'Joe' 'Sue' 'Sam'
+      ages←34 22 25
+
+      names[⍋ages]
+┌───┬───┬───┐
+│Sue│Sam│Joe│
+└───┴───┴───┘
+
+      ⍋ 'ABC' ⎕NULL ⍬ ¯3j4 'A'
+3 2 4 5 1
+
+Dyadic function:   Dyadic Grade Up
+
+Provide collating sequence for character data.
+
+      ⍋ 'Banana'
+1 2 4 6 3 5
+
+      'an' ⍋ 'Banana'
+2 4 6 3 5 1
+</pre>
+    </body>
+</html>

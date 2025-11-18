@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Slash Bar</title>
+        <char>⌿</char>
+    </head>
+    <body><pre>Dyadic function:  Replicate First (Compress First)
+
+      mat
+1  2  3  4
+5  6  7  8
+9 10 11 12
+
+      1 0 2 ⌿ mat
+1  2  3  4
+9 10 11 12
+9 10 11 12
+
+Monadic operator: Reduce First
+
+      +⌿ mat
+15 18 21 24
+
+      2 +⌿ mat     ⍝ pair-wise
+ 6  8 10 12
+14 16 18 20
+</pre>
+    </body>
+</html>

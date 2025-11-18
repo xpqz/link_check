@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Del</title>
+        <char>∇</char>
+    </head>
+    <body><pre>Del Syntax:         dfn self-reference (recursion)
+
+      fact←{             ⍝ Factorial ⍵.
+          ⍵≤1: 1         ⍝ small ⍵: finished
+          ⍵×∇ ⍵-1        ⍝ otherwise: recurse
+      }
+
+Double-Del Syntax:  dop self-reference
+
+    pow←{                ⍝ power operator: apply ⍵⍵ times
+        ⍵⍵=0:⍵           ⍝ ⍵⍵ is 0: finished
+        ⍺⍺ ∇∇(⍵⍵-1)⍺⍺ ⍵  ⍝ otherwise: recurse
+    }
+</pre>
+    </body>
+</html>

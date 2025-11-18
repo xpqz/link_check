@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Grade Down</title>
+        <char>⍒</char>
+    </head>
+    <body><pre>Monadic function:  Grade Down
+
+Indices which would select items in descending order.
+
+      ⍒ 33 11 44 66 22
+4 3 1 5 2
+
+      names←'Joe' 'Sue' 'Sam'
+      ages←34 22 25
+
+      names[⍒ages]
+┌───┬───┬───┐
+│Joe│Sam│Sue│
+└───┴───┴───┘ 
+
+      ⍒ 'ABC' ⎕NULL ⍬ ¯3j4 'A'
+1 5 4 2 3
+
+Dyadic function:   Dyadic Grade Down
+
+Provide collating sequence for character data.
+
+      ⍒ 'Banana'
+3 5 2 4 6 1
+
+      'an' ⍒ 'Banana'
+1 3 5 2 4 6
+</pre>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Squad</title>
+        <char>⌷</char>
+    </head>
+    <body><pre>Monadic function:  Materialise
+
+      ⌷ ⍵
+If ⍵ is an array, returns ⍵.
+If ⍵ is ref to an instance of a Class with a 
+Numbered Default property, all items of that property
+are returned.
+If ⍵ is a collection, returns all elements
+in the collection as an array.
+
+Dyadic function:   Index
+
+      mat
+1  2  3  4
+5  6  7  8
+9 10 11 12
+      
+      2 3 ⌷ mat
+7
+      2 ⌷ mat
+5 6 7 8
+
+      2 ⌷[2] mat
+2 6 10
+</pre>
+    </body>
+</html>

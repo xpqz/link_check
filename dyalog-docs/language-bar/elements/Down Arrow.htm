@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Down Arrow</title>
+        <char>↓</char>
+    </head>
+    <body><pre>Monadic function:  Split
+
+      mat
+1  2  3  4
+5  6  7  8
+9 10 11 12
+
+      ↓ mat
+┌───────┬───────┬──────────┐
+│1 2 3 4│5 6 7 8│9 10 11 12│
+└───────┴───────┴──────────┘
+
+      ↓[1] mat
+┌─────┬──────┬──────┬──────┐
+│1 5 9│2 6 10│3 7 11│4 8 12│
+└─────┴──────┴──────┴──────┘
+
+Dyadic function:   Drop
+
+      4 ↓ 'Pineapple'
+apple
+      ¯5 ↓ 'Pineapple'
+Pine
+      1 ¯2 ↓ mat
+5  6
+9 10
+      1 ↓ mat
+5  6  7  8
+9 10 11 12
+</pre>
+    </body>
+</html>

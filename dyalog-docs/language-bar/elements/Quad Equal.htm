@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html conditions="HAS_UNICODE">
+    <head><title>Quad Equal</title>
+        <char>⌸</char>
+    </head>
+    <body><pre>Monadic operator:  Key 
+ 
+      'Banana' {⍺ ⍵}⌸ 3 1 4 1 5 9
+┌─┬─────┐
+│B│3    │
+├─┼─────┤
+│a│1 1 9│
+├─┼─────┤
+│n│4 5  │
+└─┴─────┘
+      'Banana' {⍺,+/⍵}⌸ 3 1 4 1 5 9
+B  3
+a 11
+n  9     
+      'Banana' {⍺ ⍵}⌸ 1 2 3 4 5 6
+┌─┬─────┐
+│B│1    │
+├─┼─────┤
+│a│2 4 6│
+├─┼─────┤
+│n│3 5  │
+└─┴─────┘
+      {⍺ ⍵}⌸ 'Banana'  ⍝ (same as above)
+┌─┬─────┐
+│B│1    │
+├─┼─────┤
+│a│2 4 6│
+├─┼─────┤
+│n│3 5  │
+└─┴─────┘
+</pre>
+    </body>
+</html>

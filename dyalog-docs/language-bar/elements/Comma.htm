@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Comma</title>
+        <char>,</char>
+    </head>
+    <body><pre>Monadic function:  Ravel
+
+      cube    ⍝ 3D array
+1 2
+3 4
+   
+5 6
+7 8
+      , cube
+1 2 3 4 5 6 7 8
+
+      ,[2 3] cube    ⍝ Ravel with axes
+1 2 3 4
+5 6 7 8
+
+Dyadic function:   Catenate/Laminate (Join)
+
+      1 2 3 , 4 5 6
+1 2 3 4 5 6
+
+      cube , 99
+1 2 99
+3 4 99
+      
+5 6 99
+7 8 99
+
+      1 2 3 ,[0.5] 4 5 6   ⍝ Laminate
+1 2 3
+4 5 6 
+</pre>
+    </body>
+</html>

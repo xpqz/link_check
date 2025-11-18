@@ -1,0 +1,30 @@
+/* Custom TOC styling for monospace text */
+
+/* Style for code elements within the right-hand TOC */
+.md-sidebar--secondary .md-nav__item .md-nav__link code {
+    font-family: APL, 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* Ensure APL font is used for code in TOC */
+.md-sidebar--secondary code,
+.md-sidebar--secondary .command,
+.md-sidebar--secondary .Dyalog {
+    font-family: APL !important;
+}
+
+/* Optional: Add subtle styling to distinguish code in TOC */
+.md-sidebar--secondary .md-nav__link code {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* For HTML code tags in headings that appear in TOC */
+.md-sidebar--secondary .md-nav__link .code-in-toc {
+    font-family: APL, monospace;
+    font-size: 0.9em;
+}

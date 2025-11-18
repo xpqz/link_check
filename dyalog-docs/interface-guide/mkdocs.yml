@@ -1,0 +1,165 @@
+site_name: Interface Guide
+theme:
+  favicon: documentation-assets/images/favicon-32.png
+  logo: documentation-assets/images/dyalog-logo_white.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+  name: material
+  font:
+    text: Be Vietnam Pro
+extra_css:
+  - documentation-assets/css/main.css
+  - documentation-assets/css/extra.css
+  - documentation-assets/css/admonition-ucmdhelp.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+plugins:
+  - privacy
+  - search
+  - macros
+  - site-urls
+  - caption:
+      table:
+        enable: true
+        start_index: 1
+        increment_index: 1
+        position: bottom
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - abbr
+  - footnotes
+  - md_in_html
+  - markdown_tables_extended
+  - toc:
+      title: On this page
+nav:
+  - Introduction:
+      - Overview: introduction/overview.md
+      - Concepts: introduction/concepts.md
+      - Creating Objects: introduction/creating-objects.md
+      - Properties: introduction/properties.md
+      - User Interaction and Events: introduction/user-interaction.md
+      - Methods: introduction/methods.md
+      - High-Priority Callback Functions: introduction/high-priority-callbacks.md
+      - GUI Objects as Namespaces: introduction/gui-objects-as-namespaces.md
+      - Modal Dialog Boxes: introduction/modal-dialog-boxes.md
+      - Multi Threading with Objects: introduction/multi-threading-with-objects.md
+      - The Coordinate System: introduction/the-cooordinate-system.md
+      - High DPI Support: introduction/high-dpi-support.md
+      - Colour: introduction/colour.md
+      - Fonts: introduction/fonts.md
+      - Drag and Drop: introduction/drag-and-drop.md
+      - Debugging: introduction/debugging.md
+      - Creating Objects using NEW: introduction/creating-objects-using-new.md
+      - Native Look and Feel: introduction/native-look-and-feel.md
+      - Gestures: introduction/gestures.md
+  - GUI Tutorial:
+      - Introduction: gui-tutorial/introduction.md
+      - Some Concepts: gui-tutorial/some-concepts.md
+      - Creating a Form: gui-tutorial/creating-a-form.md
+      - Adding a Fahrenheit Label: gui-tutorial/adding-a-fahrenheit-label.md
+      - Adding a Fahrenheit Edit Field: gui-tutorial/adding-a-fahrenheit-edit-field.md
+      - Adding a Centigrade Label Edit Field: gui-tutorial/adding-a-centigrade-label-edit-field.md
+      - Adding Calculate Buttons: gui-tutorial/adding-calculate-buttons.md
+      - Closing the Application Window: gui-tutorial/closing-the-application-window.md
+      - Adding a Quit Button: gui-tutorial/adding-a-quit-button.md
+      - The Calculation Functions: gui-tutorial/the-calculation-functions.md
+      - Testing the Application: gui-tutorial/testing-the-application.md
+      - Making the Enter Key Work: gui-tutorial/making-the-enter-key-work.md
+      - Introducing a ScrollBar: gui-tutorial/introducing-a-scrollbar.md
+      - Adding a Menu: gui-tutorial/adding-a-menu.md
+      - Running from Desktop: gui-tutorial/running-from-desktop.md
+      - Using NEW instead of WC: gui-tutorial/using-new-instead-of-wc.md
+      - Temperature Converter Class: gui-tutorial/temperature-converter-class.md
+      - Dual Class Example: gui-tutorial/dual-class-example.md
+  - Graphics:
+      - Introduction: graphics/introduction.md
+      - Drawing Lines: graphics/drawing-lines.md
+      - Drawing in a Bitmap: graphics/drawing-in-a-bitmap.md
+      - Multiple Graphical Items: graphics/multiple-graphical-items.md
+      - Unnamed Graphical Objects: graphics/unnamed-graphical-objects.md
+      - Bitmaps and Icons: graphics/bitmaps-and-icons.md
+      - Metafiles: graphics/metafiles.md
+      - Picture Buttons: graphics/picture-buttons.md
+      - Using Icons: graphics/using-icons.md
+  - Composite Controls:
+      - ToolControl and ToolButton Objects: composite-controls/toolcontrol-and-toolbutton.md
+      - CoolBar and CoolBand Objects: composite-controls/coolbar-and-coolband-objects.md
+      - TabControl and TabButton Objects: composite-controls/tabcontrol-and-tabbutton-objects.md
+      - StatusBar Object: composite-controls/statusbar-object.md
+  - Hints and Tips:
+      - Using Hints: hints-and-tips/using-hints.md
+      - Using Tips: hints-and-tips/using-tips.md
+      - Hints and Tips Combined: hints-and-tips/hints-and-tips-combined.md
+  - Grid Object:
+      - Using the Grid Object: grid-object/using-the-grid-object.md
+      - Defining Overall Appearance: grid-object/defining-overall-appearance.md
+      - Row and Column Titles: grid-object/row-and-column-titles.md
+      - Displaying and Editing Values in Grid Cells: grid-object/displaying-and-editing-values-in-grid.md
+      - Specifying Individual Cell Attributes: grid-object/specifying-individual-cell-attributes.md
+      - Drawing Graphics on a Grid: grid-object/drawing-graphics-on-a-grid.md
+      - Controlling User Input: grid-object/controlling-user-input.md
+      - TreeView Feature: grid-object/treeview-feature.md
+      - Grid Comments: grid-object/grid-comments.md
+  - MDI:
+      - Multiple Document Interface Applications: mdi/introduction.md
+      - MDI Behaviour: mdi/mdi-behaviour.md
+      - Menus in MDI Applications: mdi/menus-in-mdi-applications.md
+      - Defining a Window Menu: mdi/defining-a-window-menu.md
+      - Arranging Child Forms and Icons: mdi/arranging-child-forms-and-icons.md
+  - Docking:
+      - Introduction: docking/introduction.md
+      - Docking Events: docking/docking-events.md
+      - Docking a Form inside another: docking/docking-a-form-inside-another.md
+      - Docking a Form into a CoolBar: docking/docking-a-form-into-a-coolbar.md
+      - Undocking a SubForm or a CoolBand: docking/undocking-a-subform-or-a-coolband.md
+      - Docking and Undocking a ToolControl: docking/docking-and-undocking-a-toolcontrol.md
+  - OLE Client:
+      - Introduction: ole-client/introduction.md
+      - Using an OLE Server: ole-client/using-an-ole-server.md
+      - Loading an ActiveX Control: ole-client/loading-an-activex-control.md
+      - Type Information: ole-client/type-information.md
+      - Methods: ole-client/methods.md
+      - Properties: ole-client/properties.md
+      - Events: ole-client/events.md
+      - OLE Objects without Type Information: ole-client/ole-objects-without-type-information.md
+      - Collections: ole-client/collections.md
+      - Null Values: ole-client/null-values.md
+      - Additional Interfaces: ole-client/additional-interfaces.md
+      - Writing Classes based on OLEClient: ole-client/writing-classes-based-on-oleclient.md
+  - OLE Server:
+      - Introduction: ole-server/introduction.md
+      - In process OLE Servers: ole-server/in-process-ole-servers.md
+      - Out of process OLE Servers: ole-server/out-of-process-ole-servers.md
+      - The LOAN Workspace: ole-server/the-loan-workspace.md
+      - Implementing an Object Hierarchy: ole-server/implementing-an-object-hierarchy.md
+      - The CFILES Workspace: ole-server/the-cfiles-workspace.md
+      - Configuring an out of process OLEServer for DCOM: ole-server/configuring-an-out-of-process-oleserver.md
+      - Calling an OLE Function Asynchronously: ole-server/calling-an-ole-function-asynchronously.md
+  - ActiveX Control:
+      - Introduction: activex-control/introduction.md
+      - Overview: activex-control/overview.md
+      - The Dual Control Tutorial: activex-control/dual-control-tutorial.md
+  - DDE:
+      - Introduction: dde/introduction.md
+      - Shared Variable Principles: dde/shared-variable-principles.md
+      - APL and DDE in Practice: dde/apl-and-dde-in-practice.md
+      - State and Access Control: dde/state-and-access-control.md
+      - Communication Between APLs: dde/example-communication-between-apls.md
+      - Excel as the Server: dde/example-excel-as-the-server.md
+      - Excel as the Client: dde/example-excel-as-the-client.md
+      - APL as Compute Server for Excel: dde/example-apl-as-compute-server-for-excel.md
+      - Restrictions and Limitations: dde/restrictions-limitations.md

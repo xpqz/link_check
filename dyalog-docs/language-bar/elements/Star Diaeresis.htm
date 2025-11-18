@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Star Diaeresis</title>
+        <char>⍣</char>
+    </head>
+    <body><pre>Dyadic operator: Power
+
+      cube    ⍝ 3D array
+AB
+CD
+  
+EF
+GH
+      (↓⍣1) cube   ⍝ split once
+┌──┬──┐
+│AB│CD│
+├──┼──┤
+│EF│GH│
+└──┴──┘
+      (↓⍣2) cube   ⍝ split twice
+┌───────┬───────┐
+│┌──┬──┐│┌──┬──┐│
+││AB│CD│││EF│GH││
+│└──┴──┘│└──┴──┘│
+└───────┴───────┘
+
+      f ← (32∘+)∘(×∘1.8)   ⍝ Fahrenheit from Celsius
+
+      f ¯273 ¯40 0 100     ⍝ Fahrenheit
+¯459.4 ¯40 32 212
+
+      c ← f⍣¯1             ⍝ Inverse: Celsius from Fahrenheit
+
+      c ¯459.4 ¯40 32 212  ⍝ Celsius
+¯273 ¯40 0 100
+
+      1 +∘÷⍣= 1            ⍝ fixpoint: golden mean
+1.61803 
+</pre>
+    </body>
+</html>
