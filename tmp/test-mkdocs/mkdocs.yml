@@ -1,0 +1,22 @@
+site_name: Test Documentation
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - toc:
+      title: On this page
+
+nav:
+  - Home: index.md
+  - Page 1: page1.md
+  - Page 2: page2.md
